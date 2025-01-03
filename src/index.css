@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Roboto Flex', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+code {
+  font-family: 'Courier New', source-code-pro, Menlo, Monaco, Consolas, monospace;
+}

@@ -1,0 +1,82 @@
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(34, 34, 59, 0.35) !important; /* Slightly darker semi-transparent base color */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15) !important; /* Softer shadow for elegance */
+  backdrop-filter: blur(12px) !important; /* Enhanced blur for smooth glass effect */
+  -webkit-backdrop-filter: blur(12px) !important; /* Safari support */
+  /* border-radius: 12px; Slightly rounded edges for modern look */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border for depth */
+  padding: 0.8rem 1.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+  width: 100%;
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  color: #F2E9E4; /* Light and elegant for contrast */
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #C9ADA7; /* Softer pink for hover effect */
+}
+
+/* Navbar link styles */
+.nav-link {
+  margin: 0 15px;
+  color: #C9ADA7; /* Light pink shade */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #9A8C98; /* Muted purple for hover */
+  font-weight: 600; /* Slightly bold on hover for emphasis */
+}
+
+/* Toggler styles */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-color: rgba(255, 255, 255, 0.8); /* Visible toggler */
+}
+
+/* Hover underline animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #4A4E69; /* Purple from palette for underline */
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+  }
+}
